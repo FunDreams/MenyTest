@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="PTS55F.ttf">
+            <string>PTSans-Regular</string>
+        </mutableArray>
+        <mutableArray key="PTS75F.ttf">
+            <string>PTSans-Bold</string>
+            <string>PTSans-Bold</string>
+            <string>PTSans-Bold</string>
+            <string>PTSans-Bold</string>
+        </mutableArray>
+        <mutableArray key="RobotoSlab-Regular.ttf">
+            <string>RobotoSlab-Regular</string>
+            <string>RobotoSlab-Regular</string>
+            <string>RobotoSlab-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListFlower">
+            <connections>
+                <outlet property="bCatalog" destination="WtM-6o-exz" id="qWV-l9-sTl"/>
+                <outlet property="bCreate" destination="XEn-KG-BVn" id="PYb-RV-HWe"/>
+                <outlet property="bFavorits" destination="eVF-e5-1gz" id="n2W-hv-AHj"/>
+                <outlet property="bFilter" destination="SXR-7K-tos" id="fwx-pM-lYR"/>
+                <outlet property="bNext" destination="jdg-hV-smI" id="Yt4-Ec-OLM"/>
+                <outlet property="bResetFilter" destination="O9U-6u-IgL" id="z2C-C9-0fQ"/>
+                <outlet property="bSales" destination="fC8-T0-rHE" id="P61-OD-3VY"/>
+                <outlet property="bShoppingCart" destination="deH-LJ-6XZ" id="qQM-P1-5St"/>
+                <outlet property="bToMan" destination="du4-10-QAj" id="ZLl-j9-pOS"/>
+                <outlet property="bUpToPrice" destination="TIU-Ng-4JK" id="XYI-bm-HmU"/>
+                <outlet property="bWithFlowers" destination="vmu-m7-9TU" id="yhA-uy-MKb"/>
+                <outlet property="lToMan" destination="cm6-Pc-Cw4" id="Fp3-j1-jnz"/>
+                <outlet property="lUpToPrice" destination="CLq-D1-ctR" id="Yfy-JG-aIC"/>
+                <outlet property="lWithFlowers" destination="1Wt-jC-XFv" id="kbk-eF-tdN"/>
+                <outlet property="vAbout" destination="o9h-aH-8WU" id="9Kq-Qb-Wei"/>
+                <outlet property="vCatalog" destination="SOv-Uf-GTW" id="kqB-ac-uGg"/>
+                <outlet property="vCatalogFon" destination="BFP-nK-Sm8" id="3N5-eB-7Jk"/>
+                <outlet property="vCatalogTable" destination="qNx-ao-Yzp" id="wnS-M5-juo"/>
+                <outlet property="vClients" destination="C0k-j1-tCt" id="bJn-kc-y8m"/>
+                <outlet property="vCreate" destination="SOk-XE-A53" id="aQc-D9-cIJ"/>
+                <outlet property="vDel_Pay" destination="03P-dW-UM5" id="LWe-wH-FxC"/>
+                <outlet property="vFAQ" destination="g6E-wg-vjL" id="6Rp-C7-ywx"/>
+                <outlet property="vFavorits" destination="o2I-hy-50C" id="uLj-Mo-wlR"/>
+                <outlet property="vFavoritsTable" destination="Zes-AE-2A7" id="pZ6-My-EVx"/>
+                <outlet property="vFilter" destination="Bt1-ZB-5TG" id="rzU-ek-fEk"/>
+                <outlet property="vFinishShop" destination="rNm-Em-Rj5" id="Tyh-E6-oC3"/>
+                <outlet property="vInsideFinishShop" destination="t2B-8h-fQP" id="Va6-NS-ZqT"/>
+                <outlet property="vMain" destination="exm-xh-U9g" id="0Nj-FJ-USH"/>
+                <outlet property="vMypar" destination="Z8P-vo-YU8" id="Gg8-Ny-G3n"/>
+                <outlet property="vMyparInside" destination="Uws-mB-xC9" id="FCC-DB-Cmq"/>
+                <outlet property="vOptions" destination="RMs-OA-oeI" id="EMU-ek-Oqk"/>
+                <outlet property="vOptionsInside" destination="MrD-S7-s0d" id="brc-0a-QKQ"/>
+                <outlet property="vSales" destination="xKx-SL-BN2" id="uAq-8w-EfK"/>
+                <outlet property="vSalesFon" destination="NRm-cx-CeB" id="N2l-z2-qzz"/>
+                <outlet property="vSalesTable" destination="gS1-RV-rLU" id="5WS-28-4QC"/>
+                <outlet property="vShopTable" destination="MHF-44-lPA" id="SJa-Vn-Ydh"/>
+                <outlet property="vShoping" destination="ieU-ag-2wy" id="Oqz-9m-R4q"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view autoresizesSubviews="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="exm-xh-U9g" userLabel="MainView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="528"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJT-j7-Zm6" userLabel="Menu">
+                    <rect key="frame" x="0.0" y="528" width="600" height="72"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVF-e5-1gz" userLabel="Faforits">
+                            <rect key="frame" x="370" y="3" width="50" height="50"/>
+                            <state key="normal" image="Icon-favorit.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="Icon-create-hover@180.png"/>
+                            <state key="highlighted" image="Icon-favorit.png"/>
+                            <connections>
+                                <action selector="Favorit:" destination="-1" eventType="touchUpInside" id="2kg-Uq-Pto"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEn-KG-BVn" userLabel="Create">
+                            <rect key="frame" x="237" y="3" width="50" height="50"/>
+                            <state key="normal" image="Icon-create.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="Icon-create-hover@180.png"/>
+                            <state key="highlighted" image="Icon-create.png"/>
+                            <connections>
+                                <action selector="Create:" destination="-1" eventType="touchUpInside" id="7Ji-JB-AkN"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fC8-T0-rHE" userLabel="Sales">
+                            <rect key="frame" x="305" y="3" width="50" height="50"/>
+                            <state key="normal" image="Icon-sale.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="Icon-create-hover@180.png"/>
+                            <state key="highlighted" image="Icon-sale.png"/>
+                            <connections>
+                                <action selector="Sales:" destination="-1" eventType="touchUpInside" id="Wmh-Wq-ych"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="playback" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WtM-6o-exz" userLabel="Catalog">
+                            <rect key="frame" x="169" y="3" width="50" height="50"/>
+                            <state key="normal" image="Icon-catalog.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="Icon-catalog.png"/>
+                            <connections>
+                                <action selector="Catalog:" destination="-2" eventType="touchUpInside" id="dbE-k8-Mti"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="БУКЕТЫ" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bo9-iV-kTi">
+                            <rect key="frame" x="155" y="43" width="81" height="21"/>
+                            <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="11"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="СОЗДАТЬ" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEe-PH-emg">
+                            <rect key="frame" x="224" y="43" width="81" height="21"/>
+                            <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="11"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="АКЦИИ" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exL-bA-f37">
+                            <rect key="frame" x="289" y="43" width="81" height="21"/>
+                            <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="11"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="ИЗБРАННОЕ" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0si-Vd-0Wn">
+                            <rect key="frame" x="350" y="43" width="95" height="21"/>
+                            <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="11"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="eVF-e5-1gz" firstAttribute="centerX" secondItem="hJT-j7-Zm6" secondAttribute="centerX" constant="95" id="Egr-5R-S8Y"/>
+                        <constraint firstItem="Bo9-iV-kTi" firstAttribute="centerX" secondItem="hJT-j7-Zm6" secondAttribute="centerX" constant="-104" id="Guk-ds-S1Y"/>
+                        <constraint firstItem="XEn-KG-BVn" firstAttribute="centerX" secondItem="hJT-j7-Zm6" secondAttribute="centerX" constant="-38" id="INA-n9-cQG"/>
+                        <constraint firstItem="WtM-6o-exz" firstAttribute="centerX" secondItem="hJT-j7-Zm6" secondAttribute="centerX" constant="-106" id="KaH-5e-9RT"/>
+                        <constraint firstItem="exL-bA-f37" firstAttribute="centerX" secondItem="hJT-j7-Zm6" secondAttribute="centerX" constant="30" id="Nia-lX-EGF"/>
+                        <constraint firstItem="0si-Vd-0Wn" firstAttribute="centerX" secondItem="hJT-j7-Zm6" secondAttribute="centerX" constant="98" id="Q1T-oi-Fbb"/>
+                        <constraint firstAttribute="height" constant="72" id="ZGI-fh-p6y"/>
+                        <constraint firstItem="bEe-PH-emg" firstAttribute="centerX" secondItem="hJT-j7-Zm6" secondAttribute="centerX" constant="-36" id="aKR-y3-7sz"/>
+                        <constraint firstItem="fC8-T0-rHE" firstAttribute="centerX" secondItem="hJT-j7-Zm6" secondAttribute="centerX" constant="30" id="nRY-ZS-d5Y"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="72" id="za8-gi-Izd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hJT-j7-Zm6" secondAttribute="bottom" id="5SH-Qi-eos"/>
+                <constraint firstAttribute="trailing" secondItem="hJT-j7-Zm6" secondAttribute="trailing" id="EWD-ti-3E8"/>
+                <constraint firstItem="hJT-j7-Zm6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RuR-VP-slB"/>
+            </constraints>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <point key="canvasLocation" x="-519" y="264"/>
+        </view>
+        <view contentMode="scaleToFill" id="SOk-XE-A53" userLabel="Create">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fon.png" translatesAutoresizingMaskIntoConstraints="NO" id="ksD-Pw-XAp">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.9960784912109375" green="0.0" blue="0.93333339691162109" alpha="1" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ksD-Pw-XAp" secondAttribute="trailing" id="PgM-uD-qxe"/>
+                <constraint firstItem="ksD-Pw-XAp" firstAttribute="leading" secondItem="SOk-XE-A53" secondAttribute="leading" id="SUi-ug-aJs"/>
+                <constraint firstItem="ksD-Pw-XAp" firstAttribute="top" secondItem="SOk-XE-A53" secondAttribute="top" id="leE-VW-2Bj"/>
+                <constraint firstAttribute="bottom" secondItem="ksD-Pw-XAp" secondAttribute="bottom" id="wc1-PX-Cx5"/>
+            </constraints>
+            <point key="canvasLocation" x="-1168" y="-380"/>
+        </view>
+        <view contentMode="scaleToFill" id="rNm-Em-Rj5" userLabel="FinishShop">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fon.png" translatesAutoresizingMaskIntoConstraints="NO" id="PND-Ll-L35">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t2B-8h-fQP">
+                    <rect key="frame" x="140" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdg-hV-smI">
+                            <rect key="frame" x="215" y="311" width="75" height="24"/>
+                            <state key="normal" image="continue1.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="bg-button-gark-brown.png"/>
+                            <connections>
+                                <action selector="NextStep:" destination="-2" eventType="touchUpInside" id="7bF-7x-jwo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deH-LJ-6XZ">
+                            <rect key="frame" x="33" y="311" width="103" height="24"/>
+                            <state key="normal" image="IN CARD1.png">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="IN CARD1.png"/>
+                            <connections>
+                                <action selector="ShopithCart:" destination="-1" eventType="touchUpInside" id="csK-op-4Yd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.79357638888888893" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="PND-Ll-L35" secondAttribute="trailing" id="PRu-4g-Hzi"/>
+                <constraint firstAttribute="bottom" secondItem="PND-Ll-L35" secondAttribute="bottom" id="Zfx-9O-q2j"/>
+                <constraint firstItem="PND-Ll-L35" firstAttribute="top" secondItem="rNm-Em-Rj5" secondAttribute="top" id="n2L-ES-XGb"/>
+                <constraint firstItem="PND-Ll-L35" firstAttribute="leading" secondItem="rNm-Em-Rj5" secondAttribute="leading" id="pMJ-bk-o4i"/>
+            </constraints>
+            <point key="canvasLocation" x="-519" y="-1677"/>
+        </view>
+        <view contentMode="scaleToFill" id="03P-dW-UM5" userLabel="Dil&amp;Pay">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fon.png" translatesAutoresizingMaskIntoConstraints="NO" id="A1D-OW-DDM">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="768"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.99215692281723022" green="0.9960784912109375" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
+            <point key="canvasLocation" x="-1168" y="-1032"/>
+        </view>
+        <view contentMode="scaleToFill" id="g6E-wg-vjL" userLabel="F.A.Q">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+            <point key="canvasLocation" x="-1168" y="-1677"/>
+        </view>
+        <view contentMode="scaleToFill" id="C0k-j1-tCt" userLabel="Clients">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+            <point key="canvasLocation" x="-1168" y="-2985"/>
+        </view>
+        <view contentMode="scaleToFill" id="o9h-aH-8WU" userLabel="About">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+            <point key="canvasLocation" x="-1168" y="-2336"/>
+        </view>
+        <view contentMode="scaleToFill" id="Z8P-vo-YU8" userLabel="MyData">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fon.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Go-G6-WCA">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uws-mB-xC9">
+                    <rect key="frame" x="140" y="16" width="320" height="568"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="9Go-G6-WCA" secondAttribute="trailing" id="AcO-9h-dwg"/>
+                <constraint firstItem="9Go-G6-WCA" firstAttribute="leading" secondItem="Z8P-vo-YU8" secondAttribute="leading" id="Kqz-nL-So6"/>
+                <constraint firstAttribute="bottom" secondItem="9Go-G6-WCA" secondAttribute="bottom" id="pWp-ne-WYI"/>
+                <constraint firstItem="9Go-G6-WCA" firstAttribute="top" secondItem="Z8P-vo-YU8" secondAttribute="top" id="rCB-ON-1OH"/>
+            </constraints>
+            <point key="canvasLocation" x="-519" y="-1032"/>
+        </view>
+        <view contentMode="scaleToFill" id="RMs-OA-oeI" userLabel="Options">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MrD-S7-s0d">
+                    <rect key="frame" x="140" y="16" width="320" height="568"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcQ-YZ-enp">
+                            <rect key="frame" x="8" y="247" width="304" height="30"/>
+                            <color key="backgroundColor" red="0.043137256059999997" green="0.18431372939999999" blue="0.14901961389999999" alpha="1" colorSpace="deviceRGB"/>
+                            <state key="normal" title="Доставка и оплата">
+                                <color key="titleColor" red="0.99607849120000003" green="0.99607849120000003" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="0.13725490200000001" green="0.53725490200000003" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="del_and_pay:" destination="-2" eventType="touchUpInside" id="oPh-GY-vr2"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Nz-c9-2Eg">
+                            <rect key="frame" x="8" y="285" width="304" height="30"/>
+                            <color key="backgroundColor" red="0.043137256059999997" green="0.18431372939999999" blue="0.14901961389999999" alpha="1" colorSpace="deviceRGB"/>
+                            <state key="normal" title="Обратная связь">
+                                <color key="titleColor" red="0.99607849120000003" green="0.99607849120000003" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="0.13725490200000001" green="0.53725490200000003" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="SendMessage:" destination="-1" eventType="touchUpInside" id="1xg-p5-BeW"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNN-7E-bCi">
+                            <rect key="frame" x="8" y="171" width="304" height="30"/>
+                            <color key="backgroundColor" red="0.043137256059999997" green="0.18431372939999999" blue="0.14901961389999999" alpha="1" colorSpace="deviceRGB"/>
+                            <state key="normal" title="Мои данные">
+                                <color key="titleColor" red="0.99607849120000003" green="0.99607849120000003" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="0.13725490200000001" green="0.53725490200000003" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="MyPar:" destination="-1" eventType="touchUpInside" id="YmD-Po-A9E"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="091-3I-E6u">
+                            <rect key="frame" x="8" y="209" width="304" height="30"/>
+                            <color key="backgroundColor" red="0.043137256059999997" green="0.18431372939999999" blue="0.14901961389999999" alpha="1" colorSpace="deviceRGB"/>
+                            <state key="normal" title="F.A.Q">
+                                <color key="titleColor" red="0.99607849120000003" green="0.99607849120000003" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="0.13725490200000001" green="0.53725490200000003" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="FAQ:" destination="-1" eventType="touchUpInside" id="1Eb-XC-inJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxN-0Z-0Ps">
+                            <rect key="frame" x="8" y="323" width="304" height="30"/>
+                            <color key="backgroundColor" red="0.043137256059999997" green="0.18431372939999999" blue="0.14901961389999999" alpha="1" colorSpace="deviceRGB"/>
+                            <state key="normal" title="Корпоративным клиентам">
+                                <color key="titleColor" red="0.99607849120000003" green="0.99607849120000003" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="0.13725490200000001" green="0.53725490200000003" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="CLient:" destination="-1" eventType="touchUpInside" id="epk-sv-4OM"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vwn-hb-DTG">
+                            <rect key="frame" x="8" y="361" width="304" height="30"/>
+                            <color key="backgroundColor" red="0.043137256059999997" green="0.18431372939999999" blue="0.14901961389999999" alpha="1" colorSpace="deviceRGB"/>
+                            <state key="normal" title="О сервисе">
+                                <color key="titleColor" red="0.99607849120000003" green="0.99607849120000003" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="0.13725490200000001" green="0.53725490200000003" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="About:" destination="-1" eventType="touchUpInside" id="7jN-ST-zpV"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+            <point key="canvasLocation" x="-519" y="-2985"/>
+        </view>
+        <view contentMode="scaleToFill" id="ieU-ag-2wy" userLabel="Shoping">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fon.png" translatesAutoresizingMaskIntoConstraints="NO" id="obA-CD-ZQS">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MHF-44-lPA">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="o4g-G8-o4m"/>
+                        <outlet property="delegate" destination="-1" id="GyV-4D-0ZT"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="obA-CD-ZQS" secondAttribute="bottom" id="1jk-Lj-HrY"/>
+                <constraint firstAttribute="trailing" secondItem="obA-CD-ZQS" secondAttribute="trailing" id="Rdr-Ly-XGq"/>
+                <constraint firstItem="obA-CD-ZQS" firstAttribute="leading" secondItem="ieU-ag-2wy" secondAttribute="leading" id="XKS-Gv-eOL"/>
+                <constraint firstItem="obA-CD-ZQS" firstAttribute="top" secondItem="ieU-ag-2wy" secondAttribute="top" id="jJj-XZ-R86"/>
+            </constraints>
+            <point key="canvasLocation" x="-1168" y="-3635"/>
+        </view>
+        <view autoresizesSubviews="NO" contentMode="scaleAspectFit" id="SOv-Uf-GTW" userLabel="Catalog">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bt1-ZB-5TG" userLabel="Filter">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="500"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="bg-gragient-for-filter.png" translatesAutoresizingMaskIntoConstraints="NO" id="LO9-Tt-r5b">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        </imageView>
+                        <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vmu-m7-9TU">
+                            <rect key="frame" x="8" y="55" width="300" height="75"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="yTs-Xk-Km6"/>
+                                <outlet property="delegate" destination="-1" id="DOD-CX-Va0"/>
+                            </connections>
+                        </pickerView>
+                        <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="du4-10-QAj" userLabel="To man">
+                            <rect key="frame" x="8" y="170" width="300" height="75"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="uJZ-Pl-xfu"/>
+                                <outlet property="delegate" destination="-1" id="12T-c4-joB"/>
+                            </connections>
+                        </pickerView>
+                        <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TIU-Ng-4JK" userLabel="by price">
+                            <rect key="frame" x="8" y="281" width="300" height="75"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="e5B-Mr-izB"/>
+                                <outlet property="delegate" destination="-1" id="dBk-Ii-PAb"/>
+                            </connections>
+                        </pickerView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Букет с:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Wt-jC-XFv">
+                            <rect key="frame" x="50" y="29" width="216" height="30"/>
+                            <fontDescription key="fontDescription" name="RobotoSlab-Regular" family="Roboto Slab" pointSize="18"/>
+                            <color key="textColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99607849120000003" alpha="1" colorSpace="deviceRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Кому:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cm6-Pc-Cw4">
+                            <rect key="frame" x="50" y="138" width="216" height="30"/>
+                            <fontDescription key="fontDescription" name="RobotoSlab-Regular" family="Roboto Slab" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="По цене:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLq-D1-ctR">
+                            <rect key="frame" x="50" y="245" width="216" height="30"/>
+                            <fontDescription key="fontDescription" name="RobotoSlab-Regular" family="Roboto Slab" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9U-6u-IgL">
+                            <rect key="frame" x="72" y="367" width="173" height="24"/>
+                            <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="12"/>
+                            <state key="normal" title="СБРОС ПАРАМЕТРОВ" backgroundImage="bg-button-white.png">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="ResetFilter:" destination="-1" eventType="touchUpInside" id="fkX-tP-MnK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="LO9-Tt-r5b" firstAttribute="leading" secondItem="Bt1-ZB-5TG" secondAttribute="leading" id="A3x-5g-m1O"/>
+                        <constraint firstItem="LO9-Tt-r5b" firstAttribute="top" secondItem="Bt1-ZB-5TG" secondAttribute="top" id="AxH-n4-NoN"/>
+                        <constraint firstAttribute="bottom" secondItem="LO9-Tt-r5b" secondAttribute="bottom" constant="-100" id="jqu-sf-P91"/>
+                        <constraint firstAttribute="trailing" secondItem="LO9-Tt-r5b" secondAttribute="trailing" id="p4u-IF-3vk"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fon.png" translatesAutoresizingMaskIntoConstraints="NO" id="BFP-nK-Sm8">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qNx-ao-Yzp" userLabel="VCatalog Table">
+                    <rect key="frame" x="0.0" y="600" width="600" height="0.0"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="dVR-ja-I14"/>
+                        <outlet property="delegate" destination="-1" id="KxA-Su-moe"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXR-7K-tos">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="54"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <state key="normal" title="ФИЛЬТР    " backgroundImage="bg-filter.png"/>
+                    <connections>
+                        <action selector="ButtonFilter:" destination="-1" eventType="touchUpInside" id="5Mm-Ng-QqU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.19215686269999999" green="0.17254901959999999" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+            <point key="canvasLocation" x="-519" y="-380"/>
+        </view>
+        <view autoresizesSubviews="NO" contentMode="scaleAspectFit" id="xKx-SL-BN2" userLabel="Sales">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fon.png" translatesAutoresizingMaskIntoConstraints="NO" id="NRm-cx-CeB">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gS1-RV-rLU">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="FFq-Y9-PUH"/>
+                        <outlet property="delegate" destination="-1" id="eDB-gH-M0g"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="NRm-cx-CeB" firstAttribute="leading" secondItem="xKx-SL-BN2" secondAttribute="leading" id="5br-3u-oib"/>
+                <constraint firstItem="gS1-RV-rLU" firstAttribute="leading" secondItem="xKx-SL-BN2" secondAttribute="leading" id="77M-Z4-y3w"/>
+                <constraint firstItem="gS1-RV-rLU" firstAttribute="top" secondItem="xKx-SL-BN2" secondAttribute="top" id="7iT-6F-c4z"/>
+                <constraint firstItem="NRm-cx-CeB" firstAttribute="top" secondItem="xKx-SL-BN2" secondAttribute="top" id="KSn-xY-6T3"/>
+                <constraint firstAttribute="bottom" secondItem="NRm-cx-CeB" secondAttribute="bottom" id="N1d-mC-27h"/>
+                <constraint firstAttribute="trailing" secondItem="NRm-cx-CeB" secondAttribute="trailing" id="T48-q9-bei"/>
+                <constraint firstAttribute="trailing" secondItem="gS1-RV-rLU" secondAttribute="trailing" id="bkK-rr-CSv"/>
+                <constraint firstAttribute="bottom" secondItem="gS1-RV-rLU" secondAttribute="bottom" id="pEw-Dh-lSA"/>
+            </constraints>
+            <point key="canvasLocation" x="-1168" y="264"/>
+        </view>
+        <view autoresizesSubviews="NO" contentMode="scaleAspectFit" id="o2I-hy-50C" userLabel="Favorits">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fon.png" translatesAutoresizingMaskIntoConstraints="NO" id="rHR-Cp-l0E">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Zes-AE-2A7">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Hh1-EU-HlS"/>
+                        <outlet property="delegate" destination="-1" id="gYB-TW-Aw0"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.0" blue="0.35686275360000003" alpha="1" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstItem="Zes-AE-2A7" firstAttribute="leading" secondItem="o2I-hy-50C" secondAttribute="leading" id="3Iq-na-gdu"/>
+                <constraint firstAttribute="trailing" secondItem="rHR-Cp-l0E" secondAttribute="trailing" id="65Y-0W-foE"/>
+                <constraint firstAttribute="trailing" secondItem="Zes-AE-2A7" secondAttribute="trailing" id="GxG-ye-2lZ"/>
+                <constraint firstItem="rHR-Cp-l0E" firstAttribute="leading" secondItem="o2I-hy-50C" secondAttribute="leading" id="bhN-3Y-aUH"/>
+                <constraint firstAttribute="bottom" secondItem="Zes-AE-2A7" secondAttribute="bottom" id="kbk-sf-Es4"/>
+                <constraint firstItem="rHR-Cp-l0E" firstAttribute="top" secondItem="o2I-hy-50C" secondAttribute="top" id="m4d-ZI-qhd"/>
+                <constraint firstAttribute="bottom" secondItem="rHR-Cp-l0E" secondAttribute="bottom" id="nmz-rc-9Ab"/>
+                <constraint firstItem="Zes-AE-2A7" firstAttribute="top" secondItem="o2I-hy-50C" secondAttribute="top" id="z95-jP-QqB"/>
+            </constraints>
+            <point key="canvasLocation" x="-519" y="-2336"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="IN CARD1.png" width="103" height="24"/>
+        <image name="Icon-catalog.png" width="40" height="40"/>
+        <image name="Icon-create-hover@180.png" width="180" height="180"/>
+        <image name="Icon-create.png" width="40" height="40"/>
+        <image name="Icon-favorit.png" width="40" height="40"/>
+        <image name="Icon-sale.png" width="40" height="40"/>
+        <image name="bg-button-gark-brown.png" width="130" height="25"/>
+        <image name="bg-button-white.png" width="174" height="24"/>
+        <image name="bg-filter.png" width="320" height="31"/>
+        <image name="bg-gragient-for-filter.png" width="320" height="413"/>
+        <image name="continue1.png" width="75" height="24"/>
+        <image name="fon.png" width="414" height="736"/>
+    </resources>
+</document>

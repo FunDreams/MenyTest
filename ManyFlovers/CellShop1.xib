@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+            <string>Roboto-Regular</string>
+        </mutableArray>
+        <mutableArray key="RobotoSlab-Bold 2.ttf">
+            <string>RobotoSlab-Bold</string>
+            <string>RobotoSlab-Bold</string>
+        </mutableArray>
+        <mutableArray key="RobotoSlab-Regular 2.ttf">
+            <string>RobotoSlab-Regular</string>
+            <string>RobotoSlab-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellShop1_Identifier" rowHeight="133" id="Tdm-xn-Feo" customClass="CellShop1">
+            <rect key="frame" x="0.0" y="0.0" width="251" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tdm-xn-Feo" id="ZSg-AX-Syd">
+                <rect key="frame" x="0.0" y="0.0" width="251" height="144"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Нежность" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbW-TW-Iyr">
+                        <rect key="frame" x="135" y="9" width="98" height="21"/>
+                        <fontDescription key="fontDescription" name="RobotoSlab-Regular" family="Roboto Slab" pointSize="14"/>
+                        <color key="textColor" red="0.19215686269999999" green="0.17254901959999999" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Букет:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEq-ZU-AtE">
+                        <rect key="frame" x="88" y="9" width="57" height="21"/>
+                        <fontDescription key="fontDescription" name="RobotoSlab-Regular" family="Roboto Slab" pointSize="14"/>
+                        <color key="textColor" red="0.19215686269999999" green="0.17254901959999999" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Артикул: 3467-89" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eX-FT-6So">
+                        <rect key="frame" x="88" y="28" width="155" height="21"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                        <color key="textColor" red="0.42352941179999998" green="0.41568627450000001" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Доставка: 200 р" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8n-tv-cfA">
+                        <rect key="frame" x="91" y="127" width="155" height="21"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                        <color key="textColor" red="0.42352941179999998" green="0.41568627450000001" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iJt-hB-6sG">
+                        <rect key="frame" x="0.0" y="13" width="80" height="80"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eD-xz-7Ce">
+                        <rect key="frame" x="227" y="8" width="28" height="28"/>
+                        <rect key="contentStretch" x="0.10000000000000001" y="0.34999999999999998" width="1" height="0.40000000000000002"/>
+                        <state key="normal" image="cross.png"/>
+                        <state key="highlighted" image="cross.png"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sX1-tD-1FQ">
+                        <rect key="frame" x="191" y="68" width="34" height="21"/>
+                        <fontDescription key="fontDescription" name="RobotoSlab-Bold" family="Roboto Slab" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LineCell.png" translatesAutoresizingMaskIntoConstraints="NO" id="0Rr-he-aJ4">
+                        <rect key="frame" x="2" y="142" width="248" height="1"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2099 Р" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBj-x4-ZvU">
+                        <rect key="frame" x="92" y="109" width="141" height="21"/>
+                        <fontDescription key="fontDescription" name="RobotoSlab-Bold" family="Roboto Slab" pointSize="16"/>
+                        <color key="textColor" red="0.19215686269999999" green="0.17254901959999999" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzW-Xe-TgS">
+                        <rect key="frame" x="88" y="66" width="47" height="25"/>
+                        <state key="normal" title="Button" image="Button-minus.png"/>
+                        <connections>
+                            <action selector="StepperMinus:" destination="Tdm-xn-Feo" eventType="touchUpInside" id="gBs-qg-gCL"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uh2-SR-Urx">
+                        <rect key="frame" x="136" y="66" width="47" height="25"/>
+                        <state key="normal" title="Button" image="Button-plus.png"/>
+                        <connections>
+                            <action selector="StepperPlus:" destination="Tdm-xn-Feo" eventType="touchUpInside" id="Wtw-Mb-BwN"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bClose" destination="7eD-xz-7Ce" id="bKf-aI-7se"/>
+                <outlet property="lArticle" destination="4eX-FT-6So" id="u8C-XE-0m2"/>
+                <outlet property="lDel" destination="b8n-tv-cfA" id="1Zm-nS-dEu"/>
+                <outlet property="lName" destination="JbW-TW-Iyr" id="KwJ-sx-Lk7"/>
+                <outlet property="lPrice" destination="NBj-x4-ZvU" id="W7q-ro-AmP"/>
+                <outlet property="vLine" destination="0Rr-he-aJ4" id="3Qx-5R-GHK"/>
+                <outlet property="vPict" destination="iJt-hB-6sG" id="qXG-4p-zrT"/>
+                <outlet property="valueLabel" destination="sX1-tD-1FQ" id="KyF-eS-Pop"/>
+            </connections>
+            <point key="canvasLocation" x="232.5" y="311.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Button-minus.png" width="92" height="58"/>
+        <image name="Button-plus.png" width="92" height="58"/>
+        <image name="LineCell.png" width="248" height="1"/>
+        <image name="cross.png" width="10" height="10"/>
+    </resources>
+</document>

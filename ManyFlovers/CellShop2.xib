@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="PTS55F.ttf">
+            <string>PTSans-Regular</string>
+        </mutableArray>
+        <mutableArray key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </mutableArray>
+        <mutableArray key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+            <string>Roboto-Regular</string>
+        </mutableArray>
+        <mutableArray key="RobotoSlab-Bold.ttf">
+            <string>RobotoSlab-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell alpha="0.0" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellShop2_Identifier" rowHeight="171" id="Tdm-xn-Feo" customClass="CellShop2">
+            <rect key="frame" x="0.0" y="0.0" width="251" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tdm-xn-Feo" id="ZSg-AX-Syd">
+                <rect key="frame" x="0.0" y="0.0" width="251" height="109"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Итого:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ime-Ix-oqV">
+                        <rect key="frame" x="2" y="82" width="55" height="21"/>
+                        <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="13"/>
+                        <color key="textColor" red="0.19215686269999999" green="0.17254901959999999" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Доставка бесплатно" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rh3-ri-pZh">
+                        <rect key="frame" x="1" y="4" width="148" height="21"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                        <color key="textColor" red="0.42352941179999998" green="0.41568627450000001" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2560 Р" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmG-fE-BkN">
+                        <rect key="frame" x="41" y="81" width="77" height="21"/>
+                        <fontDescription key="fontDescription" name="RobotoSlab-Bold" family="Roboto Slab" pointSize="15"/>
+                        <color key="textColor" red="0.19215686269999999" green="0.17254901959999999" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Скидка 10%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qI-Zw-gjW">
+                        <rect key="frame" x="1" y="38" width="117" height="21"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                        <color key="textColor" red="0.8666666666666667" green="0.29803921568627451" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-429 Р" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaC-AM-ggU">
+                        <rect key="frame" x="148" y="38" width="101" height="21"/>
+                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="14"/>
+                        <color key="textColor" red="0.86666666670000003" green="0.29803921570000003" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LINE.png" translatesAutoresizingMaskIntoConstraints="NO" id="N8d-yb-X7h">
+                        <rect key="frame" x="0.0" y="67" width="248" height="3"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LineCell.png" translatesAutoresizingMaskIntoConstraints="NO" id="TNo-jx-Vgt">
+                        <rect key="frame" x="2" y="29" width="248" height="1"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDx-1G-tvP" userLabel="Buy">
+                        <rect key="frame" x="148" y="80" width="101" height="24"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <state key="normal" backgroundImage="BUTTON CHECK OUT.png">
+                            <color key="titleColor" red="0.0" green="0.95686280729999995" blue="0.2941176593" alpha="1" colorSpace="deviceRGB"/>
+                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="selected">
+                            <color key="titleColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99607849120000003" alpha="1" colorSpace="deviceRGB"/>
+                        </state>
+                        <state key="highlighted" backgroundImage="BUTTON CHECK OUT.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="Line1" destination="TNo-jx-Vgt" id="wei-0x-iyV"/>
+                <outlet property="Line2" destination="N8d-yb-X7h" id="jSs-bb-i1J"/>
+                <outlet property="bBuyFinish" destination="sDx-1G-tvP" id="NAR-d2-gVo"/>
+                <outlet property="lDelFree" destination="rh3-ri-pZh" id="LwI-6U-bTC"/>
+                <outlet property="lSaleLeft" destination="4qI-Zw-gjW" id="kOJ-ds-mWI"/>
+                <outlet property="lSaleRight" destination="zaC-AM-ggU" id="ogy-Dm-ghl"/>
+                <outlet property="lSumaryPrice" destination="jmG-fE-BkN" id="09K-fx-S9u"/>
+                <outlet property="lTotal" destination="Ime-Ix-oqV" id="R5x-eY-7Zp"/>
+            </connections>
+            <point key="canvasLocation" x="232.5" y="296"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="BUTTON CHECK OUT.png" width="101" height="25"/>
+        <image name="LINE.png" width="248" height="3"/>
+        <image name="LineCell.png" width="248" height="1"/>
+    </resources>
+</document>
