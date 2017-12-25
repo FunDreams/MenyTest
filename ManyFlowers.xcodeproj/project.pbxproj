@@ -862,7 +862,7 @@
 				TargetAttributes = {
 					18A943E31B8714A4009F5C45 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = T57JL6R786;
+						DevelopmentTeam = M5ZDDZHX63;
 					};
 					18A943FC1B8714A4009F5C45 = {
 						CreatedOnToolsVersion = 6.4;
@@ -1237,6 +1237,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = M5ZDDZHX63;
 				INFOPLIST_FILE = ManyFlovers/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1254,6 +1255,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = M5ZDDZHX63;
 				INFOPLIST_FILE = ManyFlovers/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
